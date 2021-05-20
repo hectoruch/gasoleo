@@ -1,21 +1,34 @@
 {
-  "name": "my-app",
+  "name": "gasoleos-alcorcon",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "leaflet": "^1.7.1",
+    "node-sass": "4.14.1",
+    "prettier": "^2.2.1",
+    "prettier-eslint": "^12.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-google-maps": "^9.4.5",
+    "react-helmet": "^6.1.0",
+    "react-leaflet": "^3.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-scroll-to-top": "^1.1.2",
     "react-scripts": "4.0.3",
+    "react-seo-meta-tags": "^1.2.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
   }
 }

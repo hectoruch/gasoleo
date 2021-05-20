@@ -1,0 +1,21 @@
+@import '../../styles/shared.scss';
+
+.c-promotion-code {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    margin-right: $space_base_2;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: calc(100% + #{$space_base_2});
+      background-color: $secondary-color;
+      right: -(($space_base_2 + 10px) / 2);
+    }
+  }
+}

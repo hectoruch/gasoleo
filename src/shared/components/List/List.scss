@@ -1,0 +1,29 @@
+@import '../../styles/shared.scss';
+
+.c-list {
+  list-style: none;
+  margin-left: $space_base_2;
+  margin-top: $space_base_2;
+
+  &__element {
+    margin-bottom: $space_base;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      top: 50%;
+      left: -20px;
+      transform: translate(-50%, -50%);
+      background-color: $third-color;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

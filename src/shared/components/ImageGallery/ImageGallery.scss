@@ -1,0 +1,15 @@
+@import '../../styles/shared.scss';
+
+.c-image-gallery {
+  margin-top: $space_base_2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__three-element {
+    width: calc(100% / 3 - (#{$space_base}));
+    height: 200px;
+    margin-bottom: $space_base_2;
+    background-size: cover;
+  }
+}

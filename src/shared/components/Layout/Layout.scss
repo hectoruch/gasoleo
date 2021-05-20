@@ -1,0 +1,17 @@
+@import '../../styles/shared.scss';
+
+.c-layout {
+  margin: $space_base_6 auto $space_base_3;
+  padding: 0 $space_base_2;
+  max-width: 1200px;
+
+  @media screen and (min-width: $tablet) {
+    margin: $space_base_8 auto $space_base_3;
+  }
+
+  &.-index {
+    margin: $space_base_5 0 0;
+    padding: 0;
+    max-width: inherit;
+  }
+}

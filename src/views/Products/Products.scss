@@ -1,0 +1,11 @@
+@import '../../shared/styles/shared.scss';
+
+.l-products {
+  &__container {
+    margin-bottom: $space_base_3;
+
+    &:first-of-type {
+      margin-top: $space_base_3;
+    }
+  }
+}

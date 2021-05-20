@@ -1,0 +1,8 @@
+@import '../../shared/styles/shared.scss';
+
+.l-home {
+  &__image {
+    height: calc(100vh - #{$space_base_5});
+    background-size: cover;
+  }
+}
