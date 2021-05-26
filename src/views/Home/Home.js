@@ -1,12 +1,15 @@
 // vendors
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Fade } from 'react-slideshow-image';
 
 // styles
 import './Home.scss';
 
 // assets
 import IMAGE_1 from './assets/1.jpg';
+import IMAGE_2 from './assets/2.jpg';
+import IMAGE_3 from './assets/3.jpg';
 
 const Home = () => {
   return (
@@ -15,7 +18,11 @@ const Home = () => {
         <title>Gasoleos Alcorcon</title>
         <meta name="description" content="Gasoleos Alcorcon" />
       </Helmet>
-      <div className="l-home__image" style={{ backgroundImage: `url(${IMAGE_1})` }}></div>
+      <Fade arrows={false} indicators={true}>
+        <div className="each-fade" style={{ backgroundImage: `url(${IMAGE_1})` }}></div>
+        <div className="each-fade" style={{ backgroundImage: `url(${IMAGE_2})` }}></div>
+        <div className="each-fade" style={{ backgroundImage: `url(${IMAGE_3})` }}></div>
+      </Fade>
     </div>
   );
 };

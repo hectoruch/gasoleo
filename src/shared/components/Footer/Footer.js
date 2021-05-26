@@ -20,17 +20,17 @@ const Footer = () => {
               </Link>
             </li>
             <li className="c-footer__nav__ul__item">
-              <Link className="text -white -uppercase -item-footer" to="/">
+              <Link className="text -white -uppercase -item-footer" to="/aviso-legal">
                 AVISO LEGAL
               </Link>
             </li>
             <li className="c-footer__nav__ul__item">
-              <Link className="text -white -uppercase -item-footer" to="/">
+              <Link className="text -white -uppercase -item-footer" to="/politica-de-privacidad">
                 POLITICA DE PRIVACIDAD
               </Link>
             </li>
             <li className="c-footer__nav__ul__item">
-              <Link className="text -white -uppercase -item-footer" to="/">
+              <Link className="text -white -uppercase -item-footer" to="/politica-de-cookies">
                 POLITICA DE COOKIES
               </Link>
             </li>

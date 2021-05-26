@@ -12,6 +12,9 @@ import Station from './views/Station/Station';
 import Promotions from './views/Promotions/Promotions';
 import Contact from './views/Contact/Contact';
 import Products from './views/Products/Products';
+import LegalAdvise from './views/LegalAdvise/LegalAdvise';
+import CookiesAdvise from './views/CookiesAdvise/CookiesAdvise';
+import PrivacityAdvise from './views/PrivacityAdvise/PrivacityAdvise';
 
 // components
 import Header from './shared/components/Header/Header';
@@ -24,28 +27,54 @@ class App extends React.Component {
       <Router>
         <ScrollToTop />
         <Header />
-        <Layout isIndex={/*window.location.pathname === '/'*/ false}>
-          <Switch>
-            <Route exact path="/">
+
+        <Switch>
+          <Route exact path="/">
+            <Layout isIndex>
               <Home />
-            </Route>
-            <Route exact path="/sobre-nosotros">
+            </Layout>
+          </Route>
+          <Route exact path="/sobre-nosotros">
+            <Layout>
               <AboutUs />
-            </Route>
-            <Route exact path="/estacion-servicio-a-15">
+            </Layout>
+          </Route>
+          <Route exact path="/estacion-servicio-a-15">
+            <Layout>
               <Station />
-            </Route>
-            <Route exact path="/promociones">
+            </Layout>
+          </Route>
+          <Route exact path="/promociones">
+            <Layout>
               <Promotions />
-            </Route>
-            <Route exact path="/contact">
+            </Layout>
+          </Route>
+          <Route exact path="/contact">
+            <Layout>
               <Contact />
-            </Route>
-            <Route exact path="/productos">
+            </Layout>
+          </Route>
+          <Route exact path="/productos">
+            <Layout>
               <Products />
-            </Route>
-          </Switch>
-        </Layout>
+            </Layout>
+          </Route>
+          <Route exact path="/aviso-legal">
+            <Layout>
+              <LegalAdvise />
+            </Layout>
+          </Route>
+          <Route exact path="/politica-de-cookies">
+            <Layout>
+              <CookiesAdvise />
+            </Layout>
+          </Route>
+          <Route exact path="/politica-de-privacidad">
+            <Layout>
+              <PrivacityAdvise />
+            </Layout>
+          </Route>
+        </Switch>
         <Footer />
       </Router>
     );

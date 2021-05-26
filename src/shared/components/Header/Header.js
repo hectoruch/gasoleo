@@ -72,8 +72,11 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <a href="tel:+34916116256" className="c-header__nav__advise-phone text -item-menu -white -uppercase -bold">
-            ATENCION AL CLIENTE : 916 116 256
+          <a
+            href="tel:+34916116256"
+            className="c-header__nav__advise-phone text -item-menu -white -uppercase -bold"
+          >
+            TELEFONO DE PEDIDOS: 916 116 256
           </a>
         </nav>
         <div className="c-header__nav-mobile">
@@ -90,27 +93,47 @@ const Header = () => {
         <nav className="c-header-mobile__nav">
           <ul className="c-header-mobile__nav__ul">
             <li className="c-header-mobile__nav__ul__item">
-              <Link className="text -uppercase -paragraph  -white" to="/" onClick={() => setMenuMobileOpen(false)}>
+              <Link
+                className="text -uppercase -paragraph  -white"
+                to="/"
+                onClick={() => setMenuMobileOpen(false)}
+              >
                 INICIO
               </Link>
             </li>
             <li className="c-header-mobile__nav__ul__item">
-              <Link className="text -uppercase -paragraph  -white" to="/sobre-nosotros" onClick={() => setMenuMobileOpen(false)}>
+              <Link
+                className="text -uppercase -paragraph  -white"
+                to="/sobre-nosotros"
+                onClick={() => setMenuMobileOpen(false)}
+              >
                 SOBRE NOSOTROS
               </Link>
             </li>
             <li className="c-header-mobile__nav__ul__item">
-              <Link className="text -uppercase -paragraph -white" to="/estacion-servicio-a-15" onClick={() => setMenuMobileOpen(false)}>
+              <Link
+                className="text -uppercase -paragraph -white"
+                to="/estacion-servicio-a-15"
+                onClick={() => setMenuMobileOpen(false)}
+              >
                 ESTACION SERVICIO A-15
               </Link>
             </li>
             <li className="c-header-mobile__nav__ul__item">
-              <Link className="text -uppercase -paragraph -white" to="/promociones" onClick={() => setMenuMobileOpen(false)}>
+              <Link
+                className="text -uppercase -paragraph -white"
+                to="/promociones"
+                onClick={() => setMenuMobileOpen(false)}
+              >
                 PROMOCIONES
               </Link>
             </li>
             <li className="c-header-mobile__nav__ul__item">
-              <Link className="text -uppercase -paragraph -white" to="/contact" onClick={() => setMenuMobileOpen(false)}>
+              <Link
+                className="text -uppercase -paragraph -white"
+                to="/contact"
+                onClick={() => setMenuMobileOpen(false)}
+              >
                 CONTACTO
               </Link>
             </li>

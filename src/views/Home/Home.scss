@@ -1,8 +1,52 @@
 @import '../../shared/styles/shared.scss';
 
 .l-home {
+  height: calc(100vh - #{$space_base_5});
+  position: relative;
+
   &__image {
-    height: calc(100vh - #{$space_base_5});
     background-size: cover;
+  }
+}
+
+.each-fade {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  list-style: none;
+  padding: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  li {
+    display: inline-block;
+    margin-right: $space_base;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    button {
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      background-color: $secondary-color;
+      border: 0px;
+      outline: 0;
+      opacity: 0.5;
+
+      &.active {
+        opacity: 1;
+      }
+    }
   }
 }

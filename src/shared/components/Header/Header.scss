@@ -92,8 +92,9 @@
     &__advise-phone {
       position: absolute;
       right: 0;
-      padding: $space_base_05;
+      padding: $space_base_05 $space_base;
       background-color: $secondary-color;
+      border-radius: $space_base_2;
     }
   }
 
