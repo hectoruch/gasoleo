@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 
 // assets
 import ARROW from './assets/arrow.svg';
+import AVISO from './pdf/aviso.pdf';
+import COOKIES from './pdf/cookies.pdf';
+import PRIVACIDAD from './pdf/privacidad.pdf';
 
 // styles
 import './Footer.scss';
@@ -15,24 +18,37 @@ const Footer = () => {
         <nav>
           <ul className="c-footer__nav__ul">
             <li className="c-footer__nav__ul__item">
-              <Link className="text -white -uppercase -item-footer -underline" to="/">
-                ENLACES LEGALES
-              </Link>
+              <div className="text -white -uppercase -item-footer -underline">ENLACES LEGALES</div>
             </li>
             <li className="c-footer__nav__ul__item">
-              <Link className="text -white -uppercase -item-footer" to="/aviso-legal">
+              <a
+                className="text -white -uppercase -item-footer"
+                href={AVISO}
+                target="_blank"
+                rel="noreferrer"
+              >
                 AVISO LEGAL
-              </Link>
+              </a>
             </li>
             <li className="c-footer__nav__ul__item">
-              <Link className="text -white -uppercase -item-footer" to="/politica-de-privacidad">
+              <a
+                className="text -white -uppercase -item-footer"
+                href={PRIVACIDAD}
+                target="_blank"
+                rel="noreferrer"
+              >
                 POLITICA DE PRIVACIDAD
-              </Link>
+              </a>
             </li>
             <li className="c-footer__nav__ul__item">
-              <Link className="text -white -uppercase -item-footer" to="/politica-de-cookies">
+              <a
+                className="text -white -uppercase -item-footer"
+                href={COOKIES}
+                target="_blank"
+                rel="noreferrer"
+              >
                 POLITICA DE COOKIES
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>

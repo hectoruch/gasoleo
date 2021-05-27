@@ -1,6 +1,19 @@
 // vendors
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import L from 'leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+let DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 // components
 import Title from '../../shared/components/Title/Title';
@@ -11,6 +24,8 @@ import List from '../../shared/components/List/List';
 import './Contact.scss';
 
 const Contact = () => {
+  const defaultPosition = [40.3488284, -3.8281314];
+
   return (
     <div className="l-contact">
       <Helmet>
@@ -32,6 +47,14 @@ const Contact = () => {
           'Movil:  686 489 412',
         ]}
       />
+      <div className="l-contact__map-container">
+        <MapContainer center={defaultPosition} zoom={17} scrollWheelZoom={false}>
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+          <Marker position={defaultPosition}>
+            <Popup>Gasoleos Alcorcon</Popup>
+          </Marker>
+        </MapContainer>
+      </div>
     </div>
   );
 };

@@ -11,9 +11,9 @@ import ProductDetail from '../../shared/components/ProductDetail/ProductDetail';
 import './Products.scss';
 
 // assets
-import IMAGE_1 from './assets/1.jpg';
-import IMAGE_2 from './assets/2.jpg';
-import IMAGE_3 from './assets/3.jpg';
+import TRUCK from './assets/furgo.jpg';
+import RADIATOR from './assets/radiador.jpg';
+import TRACTOR from './assets/tractor.jpg';
 
 //constants
 
@@ -22,21 +22,21 @@ const PRODUCTS = [
     title: 'Gasoleo A',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat sagittis elit, amollis enim suscipit quis. Vestibulum id aliquet nisl.',
-    image: IMAGE_1,
+    image: TRUCK,
     type: 'LEFT',
   },
   {
     title: 'Gasoleo B',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat sagittis elit, amollis enim suscipit quis. Vestibulum id aliquet nisl.',
-    image: IMAGE_2,
+    image: TRACTOR,
     type: 'RIGHT',
   },
   {
     title: 'Gasoleo C',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat sagittis elit, amollis enim suscipit quis. Vestibulum id aliquet nisl.',
-    image: IMAGE_3,
+    image: RADIATOR,
     type: 'LEFT',
   },
 ];
