@@ -12,7 +12,7 @@ import './Header.scss';
 
 const Header = () => {
   const [menuMobileOpen, setMenuMobileOpen] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(false);
+  // const [openDropdown, setOpenDropdown] = useState(false);
 
   return (
     <>
@@ -32,10 +32,10 @@ const Header = () => {
                 INICIO
               </Link>
             </li>
-            <li
+            {/* <li
               className="c-header__nav__ul__item -dropdown"
               onMouseOver={() => setOpenDropdown(true)}
-              onMouseLeave={() => setOpenDropdown(false)}
+              onMouseLeave={()  => setOpenDropdown(false)}
             >
               <div className="text -uppercase -item-menu  -white">SOBRE NOSOTROS</div>
               <div className="c-header__nav__ul__item__triangle"></div>
@@ -55,10 +55,20 @@ const Header = () => {
                   </ul>
                 </nav>
               )}
+            </li> */}
+            <li className="c-header__nav__ul__item">
+              <Link className="text -uppercase -item-menu -white" to="/productos">
+                PRODUCTOS
+              </Link>
             </li>
             <li className="c-header__nav__ul__item">
               <Link className="text -uppercase -item-menu -white" to="/estacion-servicio-a-15">
                 ESTACION SERVICIO A-15
+              </Link>
+            </li>
+            <li className="c-header__nav__ul__item">
+              <Link className="text -uppercase -item-menu -white" to="/sobre-nosotros">
+                QUIENES SOMOS
               </Link>
             </li>
             <li className="c-header__nav__ul__item">

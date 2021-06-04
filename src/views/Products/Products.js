@@ -21,21 +21,35 @@ const PRODUCTS = [
   {
     title: 'Gasoleo A',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat sagittis elit, amollis enim suscipit quis. Vestibulum id aliquet nisl.',
+      'Carburante especialmente indicado para la utilización en los motores diésel de combustión interna (automóviles y vehículos industriales. Producto no inflamable a temperatura ambiente. Contiene aditivos exclusivos específicos que mejoran su calidad para ser distinguido de otros existentes en el mercado y aportan las siguientes ventajas para el vehículo:',
+    listProperties: [
+      'Mejores prestaciones del motor',
+      'Menor consumo',
+      'Alta protección contra el desgaste de la bomba y del sistema de inyección',
+      'Alta protección contra la corrosión del sistema de alimentación del motor',
+      'Reducción de emisiones contaminantes',
+      'Reducción de espumas en el repostaje',
+    ],
     image: TRUCK,
     type: 'LEFT',
   },
   {
     title: 'Gasoleo B',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat sagittis elit, amollis enim suscipit quis. Vestibulum id aliquet nisl.',
+      'Es un gasóleo especialmente indicado para obtener el máximo rendimiento de los tractores y máquinas agrícolas que utilizan los profesionales del campo. Se vende a las cooperativas, instalaciones agrícolas, agricultores, etc.',
+    listProperties: [
+      'El mayor y mejor equipo de asistencia técnica a su disposición para ayudarle a resolver cualquier problema que tengan sus instalaciones ',
+      'Calidad garantizada',
+      'Más refinado que el gasóleo de calefacción',
+    ],
     image: TRACTOR,
     type: 'RIGHT',
   },
   {
     title: 'Gasoleo C',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat sagittis elit, amollis enim suscipit quis. Vestibulum id aliquet nisl.',
+      'Carburante específico para comunidades de vecinos, viviendas unifamiliares, industrias, cooperativas, servicios, colectividades, etc. Con una composición más densa que los otros derivados (gasóleos A y B), con mayor presencia de azufre, parafinas. Esto le confiere un poder calorífico ligeramente superior a los otros.',
+    listProperties: [],
     image: RADIATOR,
     type: 'LEFT',
   },
@@ -43,10 +57,16 @@ const PRODUCTS = [
 
 const Products = () => {
   const buildProducts = products => {
-    return products.map(({ title, description, image, type }, index) => {
+    return products.map(({ title, description, image, type, listProperties }, index) => {
       return (
         <div className="l-products__container" key={`product-${index}`}>
-          <ProductDetail title={title} description={description} image={image} type={type} />
+          <ProductDetail
+            title={title}
+            description={description}
+            image={image}
+            type={type}
+            listProperties={listProperties}
+          />
         </div>
       );
     });
@@ -60,12 +80,7 @@ const Products = () => {
       </Helmet>
       <Title>Productos</Title>
       <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat sagittis elit, a
-        mollis enim suscipit quis. Vestibulum id aliquet nisl. Aenean ornare, purus lacinia
-        vulputate dictum, nibh dui placerat erat, a accumsan tortor turpis non velit. Quisque ornare
-        sapien quis dui tincidunt condimentum. Donec porttitor tincidunt neque non viverra. Vivamus
-        a gravida sapien. Integer iaculis metus erat, et accumsan lacus finibus eu. In ac est vitae
-        lorem dignissim rutrum vel eu lacus.
+        <b>SERVICIO DE ENTREGA EN 24 HORAS.</b>
       </Paragraph>
       {buildProducts(PRODUCTS)}
     </div>
