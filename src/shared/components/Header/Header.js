@@ -132,6 +132,15 @@ const Header = () => {
             <li className="c-header-mobile__nav__ul__item">
               <Link
                 className="text -uppercase -paragraph -white"
+                to="/productos"
+                onClick={() => setMenuMobileOpen(false)}
+              >
+                PRODUCTOS
+              </Link>
+            </li>
+            <li className="c-header-mobile__nav__ul__item">
+              <Link
+                className="text -uppercase -paragraph -white"
                 to="/promociones"
                 onClick={() => setMenuMobileOpen(false)}
               >
