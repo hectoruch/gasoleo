@@ -13,7 +13,7 @@ import './AboutUs.scss';
 // assets
 import IMAGE_1 from './assets/1.jpg';
 import IMAGE_3 from './assets/3.jpg';
-import IMAGE_6 from './assets/6.jpg';
+import IMAGE_2 from './assets/2.jpg';
 
 const AboutUs = () => {
   return (
@@ -68,8 +68,8 @@ const AboutUs = () => {
       <ImageGallery
         images={[
           { image: IMAGE_1, alt: 'estacion', title: 'estacion' },
+          { image: IMAGE_2, alt: 'estacion', title: 'estacion' },
           { image: IMAGE_3, alt: 'estacion', title: 'estacion' },
-          { image: IMAGE_6, alt: 'taller', title: 'taller' },
         ]}
         type="THREE"
       />

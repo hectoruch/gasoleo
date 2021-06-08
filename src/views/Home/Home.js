@@ -22,7 +22,7 @@ const Home = () => {
       <Fade arrows={false} indicators={true}>
         <div className="each-fade" style={{ backgroundImage: `url(${IMAGE_1})` }}></div>
         <div className="each-fade" style={{ backgroundImage: `url(${IMAGE_2})` }}></div>
-        <div className="each-fade" style={{ backgroundImage: `url(${IMAGE_3})` }}></div>
+        <div className="each-fade -third" style={{ backgroundImage: `url(${IMAGE_3})` }}></div>
         <div className="each-fade" style={{ backgroundImage: `url(${IMAGE_4})` }}></div>
       </Fade>
     </div>

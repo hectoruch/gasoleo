@@ -80,6 +80,10 @@ const Products = () => {
       </Helmet>
       <Title>Productos</Title>
       <Paragraph>
+        Prestamos servicio de Legalización de depósitos a través de una empresa asociada, así como
+        la instalación de depósitos
+      </Paragraph>
+      <Paragraph>
         <b>SERVICIO DE ENTREGA EN 24 HORAS.</b>
       </Paragraph>
       {buildProducts(PRODUCTS)}

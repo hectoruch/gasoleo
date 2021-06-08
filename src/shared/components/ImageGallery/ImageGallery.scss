@@ -8,8 +8,10 @@
 
   &__three-element {
     width: calc(100% / 3 - (#{$space_base}));
-    height: 200px;
+    height: 300px;
     margin-bottom: $space_base_2;
-    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }

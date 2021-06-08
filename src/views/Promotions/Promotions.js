@@ -5,24 +5,24 @@ import { Helmet } from 'react-helmet';
 // components
 import Title from '../../shared/components/Title/Title';
 import Paragraph from '../../shared/components/Paragraph/Paragraph';
-import PromotionCode from '../../shared/components/PromotionCode/PromotionCode';
+// import PromotionCode from '../../shared/components/PromotionCode/PromotionCode';
 
 // // styles
 import './Promotions.scss';
 
 //constants
-import { PROMOTIONS } from './constants/Promotions.constants';
+// import { PROMOTIONS } from './constants/Promotions.constants';
 
 const Promotions = () => {
-  const buildPromotions = promotions => {
-    return promotions.map(({ title, description }, index) => {
-      return (
-        <div key={`promotion-${index}`} className="l-promotions__container">
-          <PromotionCode title={title} description={description} />
-        </div>
-      );
-    });
-  };
+  // const buildPromotions = promotions => {
+  //   return promotions.map(({ title, description }, index) => {
+  //     return (
+  //       <div key={`promotion-${index}`} className="l-promotions__container">
+  //         <PromotionCode title={title} description={description} />
+  //       </div>
+  //     );
+  //   });
+  // };
   return (
     <div className="l-promotions">
       <Helmet>
@@ -30,12 +30,15 @@ const Promotions = () => {
         <meta name="description" content="Promociones" />
       </Helmet>
       <Title>Promociones</Title>
+      {/* {buildPromotions(PROMOTIONS)} */}
       <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat sagittis elit, a
-        mollis enim suscipit quis. Vestibulum id aliquet nisl. Aenean ornare, purus lacinia
-        vulputate dictum, nibh dui placerat erat, a accumsan tortor turpis non velit.
+        <b>Proximamente se añadiran nuevas promociones.</b>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </Paragraph>
-      {buildPromotions(PROMOTIONS)}
     </div>
   );
 };
