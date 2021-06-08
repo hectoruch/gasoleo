@@ -7,9 +7,21 @@
   justify-content: space-between;
 
   &__three-element {
-    width: calc(100% / 3 - (#{$space_base}));
+    width: calc(100% / 1 - (#{$space_base}));
+    margin-bottom: $space_base_05;
+
+    @media screen and (min-width: $mobile) {
+      width: calc(100% / 2 - (#{$space_base}));
+      margin-bottom: $space_base;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: $space_base_2;
+      width: calc(100% / 3 - (#{$space_base}));
+    }
+
     height: 300px;
-    margin-bottom: $space_base_2;
+
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: contain;

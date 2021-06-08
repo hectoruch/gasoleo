@@ -2,10 +2,19 @@
 
 .c-product-detail {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 
   &__image {
-    width: 50%;
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+      width: 50%;
+    }
+
     background-size: cover;
     height: 350px;
     position: relative;
@@ -23,8 +32,15 @@
   }
 
   &__information {
-    padding-left: $space_base_2;
-    width: 50%;
+    padding-left: 0;
+    width: 100%;
+    margin-top: $space_base;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 0;
+      padding-left: $space_base_2;
+      width: 50%;
+    }
 
     &__title {
       margin-top: 0;
